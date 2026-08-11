@@ -1,0 +1,1 @@
+Optimised Star Lodge gallery assets are stored in this folder.
