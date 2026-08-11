@@ -1,3 +1,8 @@
+const photoStyles = document.createElement('link');
+photoStyles.rel = 'stylesheet';
+photoStyles.href = 'gallery.css';
+document.head.appendChild(photoStyles);
+
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
 
