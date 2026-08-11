@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Photo gallery of Star Lodge Arawa accommodation, dining, facilities and property in Bougainville.">
+<title>Gallery | Star Lodge Arawa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="gallery.css">
+</head><body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img class="brand-logo" src="public/images/star-lodge-logo.svg" alt="Star Lodge Arawa logo"></a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button><nav class="main-nav"><a href="index.html#about">About</a><a href="index.html#rooms">Rooms</a><a href="index.html#dining">Dining</a><a href="index.html#facilities">Facilities</a><a href="gallery.html">Gallery</a><a href="index.html#contact">Contact</a><a class="nav-cta" href="https://wa.me/67572835502">Book Now</a></nav></div></header>
+<main class="gallery-page">
+<section class="gallery-page-hero"><div class="container"><p class="section-kicker light">STAR LODGE • ARAWA</p><h1>Explore Star Lodge</h1><p>Browse genuine photographs of our rooms, dining, food and property.</p></div></section>
+<section class="section"><div class="container"><div class="gallery-filter" role="group" aria-label="Filter gallery"><button class="active" data-filter="all">All</button><button data-filter="rooms">Rooms</button><button data-filter="food">Food & Dining</button><button data-filter="property">Property</button></div>
+<div class="full-gallery">
+<figure data-category="rooms"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.43 PM (1).jpeg" alt="Star Lodge guest room" loading="lazy"><figcaption>Guest accommodation</figcaption></figure>
+<figure data-category="rooms"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.43 PM (2).jpeg" alt="Star Lodge room" loading="lazy"><figcaption>Comfortable rooms</figcaption></figure>
+<figure data-category="rooms"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.44 PM (1).jpeg" alt="Star Lodge room facilities" loading="lazy"><figcaption>Room facilities</figcaption></figure>
+<figure data-category="rooms"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.44 PM (2).jpeg" alt="Star Lodge accommodation" loading="lazy"><figcaption>Accommodation</figcaption></figure>
+<figure data-category="rooms"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.45 PM (1).jpeg" alt="Star Lodge room" loading="lazy"><figcaption>Room interiors</figcaption></figure>
+<figure data-category="food"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.50 PM.jpeg" alt="Seafood at Star Lodge" loading="lazy"><figcaption>Fresh seafood</figcaption></figure>
+<figure data-category="food"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.50 PM (2).jpeg" alt="Star Lodge bar" loading="lazy"><figcaption>Restaurant & bar</figcaption></figure>
+<figure data-category="food"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.51 PM.jpeg" alt="Evening dining at Star Lodge" loading="lazy"><figcaption>Evening dining</figcaption></figure>
+<figure data-category="food"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.47 PM (2).jpeg" alt="Star Lodge food" loading="lazy"><figcaption>Meals prepared on site</figcaption></figure>
+<figure data-category="property"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.33 PM (1).jpeg" alt="Star Lodge Arawa property" loading="lazy"><figcaption>Star Lodge Arawa</figcaption></figure>
+<figure data-category="property"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.31 PM (1).jpeg" alt="Star Lodge property" loading="lazy"><figcaption>Property & surrounds</figcaption></figure>
+<figure data-category="property"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.32 PM.jpeg" alt="Star Lodge property" loading="lazy"><figcaption>Lodge facilities</figcaption></figure>
+<figure data-category="property"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.34 PM.jpeg" alt="Star Lodge exterior" loading="lazy"><figcaption>Property view</figcaption></figure>
+<figure data-category="property"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.35 PM.jpeg" alt="Star Lodge Arawa" loading="lazy"><figcaption>Arawa accommodation</figcaption></figure>
+<figure data-category="property"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.38 PM (1).jpeg" alt="Star Lodge facilities" loading="lazy"><figcaption>Guest facilities</figcaption></figure>
+<figure data-category="property"><img src="public/images/gallery/WhatsApp Image 2026-08-11 at 8.01.41 PM.jpeg" alt="Star Lodge Arawa" loading="lazy"><figcaption>Star Lodge experience</figcaption></figure>
+</div></div></section>
+<section class="gallery-booking"><div class="container"><p class="section-kicker light">READY TO STAY?</p><h2>Make Star Lodge your base in Arawa.</h2><a class="btn btn-primary" href="https://wa.me/67572835502">Check availability on WhatsApp</a></div></section>
+</main><footer class="site-footer"><div class="container footer-bottom">© <span id="year"></span> Star Lodge Arawa. All rights reserved.</div></footer><script src="script.js"></script><script>document.querySelectorAll('.gallery-filter button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.gallery-filter button').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;document.querySelectorAll('.full-gallery figure').forEach(x=>x.hidden=f!=='all'&&x.dataset.category!==f)}));</script></body></html>
